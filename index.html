@@ -46,7 +46,7 @@
     <!-- Hero  -->
     <section class="hero">
       <h1 class="title">Эффективные решения для вашего бизнеса</h1>
-      <button type="button">Заказать услугу</button>
+      <button type="button" data-modal-open >Заказать услугу</button>
     </section>
 
     <!--Features -->
@@ -106,13 +106,22 @@
         <h2 class="title">Чем мы занимаемся</h2>
         <ul class="list">
           <li class="item">
-            <img src="./images/img.jpg" alt="розробка сайтів" width="370" />
+            <div class="item-desc">
+              <img src="./images/img.jpg" alt="розробка сайтів" width="370" />
+             <p class="work-desc">Десктопные приложения</p>
+            </div>
           </li>
           <li class="item">
-            <img src="./images/img2.jpg" alt="розробка мобільних додатків" width="370" />
+            <div class="item-desc">
+              <img src="./images/img2.jpg" alt="розробка мобільних додатків" width="370" />
+              <p class="work-desc">Мобильные приложения</p>
+            </div>
           </li>
           <li class="item">
-            <img src="./images/img3.jpg" alt="дизайн лого" width="370" />
+            <div class="item-desc">
+              <img src="./images/img3.jpg" alt="дизайн лого" width="370" />
+            <p  class="work-desc">Дизайнерские решения</p>
+            </div>
           </li>
         </ul>
       </div>
@@ -362,6 +371,22 @@
 </div>
     </div>
   </footer>
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <p>Lorem ipsum dolor sit amet.</p>
+    <button class="backdrop-close" data-modal-close>
+      <svg class="icon" width="30px" heigth="30px">
+        <use href="./images/sprite.svg#icon-closebackdrop">
+        </use>
+      </svg>
+    </button>
+  </div>
+
+</div>
+
+<script src="./js/modal.js"></script>
+
 </body>
 
 </html>
