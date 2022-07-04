@@ -7,8 +7,8 @@
   --background-second-color: #2f303a;
   --section-background-color: #f5f4fa;
   --clients-color: #afb1b8;
-  --portfolio-cards-hover:rgba(33, 150, 243, 0.9);
-  --backdrop-color:rgba(0, 0, 0, 0.2);
+  --portfolio-cards-hover: rgba(33, 150, 243, 0.9);
+  --backdrop-color: rgba(0, 0, 0, 0.2);
 }
 
 h1,
@@ -32,8 +32,10 @@ ul {
   height: 100%;
   background-color: var(--backdrop-color);
 }
-.backdrop.is-hidden {opacity: 0;
-pointer-events: none;}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
 
 .backdrop-close {
   position: absolute;
@@ -48,7 +50,7 @@ pointer-events: none;}
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--main-color-project);
   border-radius: 50%;
-  border:  1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .backdrop-close .icon {
@@ -56,18 +58,15 @@ pointer-events: none;}
   height: 18px;
 }
 
-.modal { 
-min-width: 528px ;
-min-height: 581px ;
+.modal {
+  min-width: 528px;
+  min-height: 581px;
   background-color: var(--main-color-project);
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
-
-
-
 
 body {
   background-color: var(--main-color-project);
@@ -157,6 +156,7 @@ header {
 
   display: block;
   padding: 32px 0px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
@@ -195,6 +195,8 @@ header {
   color: var(--secondary-text-color);
   text-decoration: none;
   font-weight: 500;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-header:focus,
 .contacts-header:hover {
@@ -204,6 +206,7 @@ header {
 .icon-contacts {
   fill: currentColor;
   margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-contacts:focus,
@@ -256,6 +259,8 @@ header {
   min-width: 200px;
   border: 0px;
   margin-top: 30px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero button:hover,
@@ -299,7 +304,7 @@ header {
   color: var(--main-text-color);
 }
 
-.pic { 
+.pic {
   height: 120px;
   display: flex;
   justify-content: center;
@@ -332,7 +337,6 @@ header {
   text-align: center;
 }
 
-
 .item-desc {
   display: flex;
   justify-content: center;
@@ -349,15 +353,13 @@ header {
   display: flex;
   bottom: 0;
   position: absolute;
- font-weight: 700;
- font-size: 14px;
- line-height: 1.14;
- text-transform: uppercase;
- color: var(--main-color-project);
- background-color: rgba(47, 48, 58, 0.8);;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--main-color-project);
+  background-color: rgba(47, 48, 58, 0.8);
 }
-
-
 
 /* Team  */
 
@@ -413,6 +415,8 @@ header {
   background-color: var(--main-color-project);
   color: var(--clients-color);
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-item-a:focus,
@@ -425,6 +429,7 @@ header {
   width: 20px;
   height: 20px;
   fill: currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-social-card:focus,
@@ -453,16 +458,19 @@ header {
   color: var(--clients-color);
   border: 1px solid var(--clients-color);
   border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-company {
   fill: currentColor;
+  transition:fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item-company:focus,
 .item-company:hover {
   border-color: var(--secondary-color-project);
   color: var(--secondary-color-project);
+  
 }
 
 .logo-company:focus,
@@ -511,6 +519,10 @@ header {
   text-decoration: none;
 }
 
+.foot .contact {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .foot .contact:hover,
 .foot .contact:focus {
   color: var(--secondary-color-project);
@@ -549,6 +561,8 @@ header {
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--main-color-project);
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .foot .icon {
@@ -601,6 +615,8 @@ header {
   background-color: #f5f4fa;
   padding: 6px 22px;
   border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-button button:hover,
@@ -633,28 +649,41 @@ header {
   color: inherit;
 }
 
-.thumb-card{
+.thumb-card {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
 
-.thumb-card::before{
+.card-overlay{
   position: absolute;
-  content: '';
-  display: inline-block;
   width: 100%;
   height: 100%;
-  background-color: var(--portfolio-cards-hover) ;
-  opacity: 0;
+  background-color: var(--portfolio-cards-hover);
+  transition: transform 250ms 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(100%);
+  
 }
 
-.thumb-card:hover::before {
-  opacity: 1
-  ;
+.card { overflow: hidden;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.product-desc { 
+
+.card:hover, .card:focus {
+   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.card:hover .card-overlay {
+  transform: translateY(0%);
+ }
+
+
+
+
+.product-desc {
   padding: 63px 24px;
   width: 100%;
   height: 100%;
@@ -666,17 +695,7 @@ header {
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
-  opacity: 0;
-}
-
-.product-desc:hover {
-  opacity: 1;
-}
-
-
-.link-portfolio:focus , .link-portfolio:hover { 
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  
 }
 
 .list-projects .item:nth-child(3n) {
